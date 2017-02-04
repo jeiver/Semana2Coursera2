@@ -5,6 +5,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.Touch;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -21,8 +22,17 @@ public class MainActivity extends AppCompatActivity {
         miFlotante.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getBaseContext(),getResources().getString(R.string.mensajitoLoco),Toast.LENGTH_SHORT).show();
-                Snackbar.make(view, getResources().getString(R.string.mensajitoLoco),Snackbar.LENGTH_SHORT).show();
+               // Toast.makeText(getBaseContext(),getResources().getString(R.string.mensajitoLoco),Toast.LENGTH_SHORT).show();
+                Snackbar.make(view, getResources().getString(R.string.mensajitoLoco),Snackbar.LENGTH_SHORT)
+                        .setAction(getResources().getString(R.string.textoAccion), new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Log.i("SNACKBAR","Click en Snackbar");
+                            }
+                        })
+                        .setActionTextColor(getResources().getColor(R.color.colorAccent))
+                        .show();
+
             }
         });
     }
