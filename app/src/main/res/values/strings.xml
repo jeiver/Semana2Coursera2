@@ -5,4 +5,18 @@
     <string name="nombreEmpresa">Electronicos JAYR</string>
     <string name="mensajitoLoco">Hola no me pinches</string>
     <string name="textoAccion">esta es la Acción</string>
+    <string-array name="Electronicos">
+        <item>Pc viejo</item>
+        <item>Pc No Tan Viejo</item>
+        <item>Pc nuevo</item>
+        <item>Pc no existente</item>
+    </string-array>
+    <string-array name="Gatos">
+        <item>Gato 1</item>
+        <item>Gato 2</item>
+        <item>gato 3</item>
+        <item>gato 4</item>
+    </string-array>
+    <string name="tituloTarjeta">Electronicos JAYR</string>
+    <string name="descripcionTarjeta">Empresa de soporte tecnico</string>
 </resources>
