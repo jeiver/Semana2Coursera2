@@ -8,4 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="MiButtonRaised" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal" >@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/blancoBoton</item>
+        <item name="android:textColor">@color/blancoBoton</item>
+    </style>
 </resources>

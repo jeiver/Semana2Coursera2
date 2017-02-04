@@ -3,4 +3,5 @@
     <string name="saludo">Bienvenido</string>
     <string name="botonInicio">Continuar</string>
     <string name="nombreEmpresa">Electronicos JAYR</string>
+    <string name="mensajitoLoco">Hola no me pinches</string>
 </resources>

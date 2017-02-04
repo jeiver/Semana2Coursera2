@@ -12,6 +12,7 @@
     tools:context="com.jeiveryr.semana2coursera.MainActivity">
 
     <TextView
+        android:id="@+id/tvBienvenido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/saludo"
@@ -27,27 +28,38 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="11dp"
-        android:id="@+id/button"
-        android:background="@color/colorAccent"
-        android:textColor="?android:attr/textColorSecondary" />
+        android:id="@+id/tvContinue"
+        android:theme="@style/MiButtonRaised"/>
 
     <ImageView
         app:srcCompat="@drawable/logo"
-        android:id="@+id/imageView"
+        android:id="@+id/tvLogo"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginBottom="169dp"
-        android:layout_above="@+id/button"
+        android:layout_above="@+id/tvContinue"
         android:layout_centerHorizontal="true"
-        android:layout_margin="110dp" />
+        android:layout_margin="110dp"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:text="@string/nombreEmpresa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView2"
+        android:id="@+id/tvNombreLogo"
         android:textSize="14sp"
-        android:layout_alignTop="@+id/imageView"
+        android:layout_alignTop="@+id/tvLogo"
         android:layout_centerHorizontal="true"
         android:textColor="?android:attr/textColorSecondary" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/estre"
+        android:id="@+id/flabMiFlab"
+
+        android:layout_above="@+id/tvContinue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="45dp" />
 </RelativeLayout>
